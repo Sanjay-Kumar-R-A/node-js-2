@@ -23,6 +23,7 @@ app.use(express.json());
 app.get("/", (req, res) => {
     res.status(200).send("Welcome to the API");
 });
+
 //Custom routes from Routers
 app.use("/api/products", productRouters);
 
